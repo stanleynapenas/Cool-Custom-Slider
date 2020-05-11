@@ -57,5 +57,23 @@ $( document ).ready(function(){
     }
 
 
+    $(".circle-nav").click(function(){
+        var clickedSldCrl = $(this).attr("data-ref");
+
+        $(".circle-nav.active").removeClass("active");
+        $(".slider-content img.active").removeClass("active");
+        
+        $(this).addClass("active");
+        $("img[data-ref=" + clickedSldCrl +"]").addClass("active");
+
+    })
+
+
 
 });
+
+
+
+
+
+
